@@ -18,6 +18,6 @@ pip3 install -r requirements.txt
 ansible-playbook -i inventory/local/hosts.ini --become --become-user=root cluster.yml
 
 # apply KUBECONFIG
-cp /etc/kubernetes/admin.conf ${VAGRANT_HOME}
-chown vagrant ${VAGRANT_HOME}/admin.conf
-echo "export KUBECONFIG=${VAGRANT_HOME}/admin.conf" >> ${VAGRANT_HOME}/.profile
+mkdir -p $VAGRANT_HOME/.kube
+cp /etc/kubernetes/admin.conf ${VAGRANT_HOME}/.kube/config
+chown vagrant ${VAGRANT_HOME}/.kube/config
