@@ -29,4 +29,4 @@ cp /etc/kubernetes/admin.conf ${VAGRANT_HOME}/.kube/config
 chown vagrant ${VAGRANT_HOME}/.kube/config
 
 # export KUBECONFIG for host OS
-sed "s/127.0.0.1/$IP/" /etc/kubernetes/admin.conf > ${VAGRANT_HOME}.kube/config_for_host_os
+sed "s/127.0.0.1/$IP/" /etc/kubernetes/admin.conf > ${VAGRANT_HOME}/.kube/config_for_host_os
