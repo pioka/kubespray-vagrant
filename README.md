@@ -1,5 +1,5 @@
 # kubespray-vagrant
-kubesprayをVagrantで使いたいけど、ホストOSにruby入れるのすらめんどくさい人向けVagrantfile
+Vagrant+KubesprayでシングルノードKubernetsクラスタ立てるやつ
 
 ## 使い方
 ```
