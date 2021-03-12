@@ -14,7 +14,7 @@ vagrant up
 
 kubectl叩く。
 
-## ホストOSからkubectl
+### ホストOSからkubectl
 `vagrant ssh` でVMに乗り込む。
 
 ゲストOS側の`/home/vagrant/.kube/config_for_host_os`の中身をそのままホストOS側の`~/.kube/config`にペーストする。
