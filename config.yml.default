@@ -1,0 +1,4 @@
+address: "192.168.222.2"
+ssh_forward_port: 22202
+cpus: 1
+memory_mb: 2048
