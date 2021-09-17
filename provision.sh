@@ -25,7 +25,6 @@ sed -i "s/node1/$(hostname)/g" inventory/local/hosts.ini
 ansible-playbook \
   -i inventory/local/hosts.ini \
   --become --become-user=root \
-  -e 'kube_network_plugin=flannel' \
   -e 'dns_min_replicas=1' \
   cluster.yml
 
